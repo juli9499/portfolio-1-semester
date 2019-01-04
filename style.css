@@ -6,6 +6,7 @@ html {
 
 body {
     font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     background-color: var(--color-1);
     margin: 0;
 }
@@ -23,7 +24,7 @@ body {
 /*Variables*/
 :root {
     --color-1: #ffffff;
-    --color-2: #e5bfe8;
+    --color-2: #ebbeef;
     --color-3: #efe2d2;
     --color-4: #83a9c9;
     --color-5: #aed3e6;
@@ -55,21 +56,20 @@ footer {
 
 .undermenu {
     position: absolute;
+    right: 0;
+    text-align: right;
+    background-color: pink;
+
 
     transition: transform 0.5s;
     transform-origin: top left;
-}
-
-
-
-
-/*
-
-.undermenu {
-    text-align: right;
-    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
     margin-right: 20px;
+
 }
+
 
 .undermenu a {
     padding: 0px 6px;
@@ -82,17 +82,22 @@ footer {
     text-decoration: underline;
     color: white;
 }
-*/
 
 
 
 @media screen and (min-width: 390px) {
 
+    #menuknap {
+        display: none;
+    }
 
     .undermenu {
         text-align: right;
         margin-top: 40px;
         margin-right: 20px;
+        display: flex;
+        flex-direction: row;
+        background-color: none;
     }
 
     .undermenu a {
@@ -109,6 +114,18 @@ footer {
 
 }
 
+
+#logo {
+    background-image: url(pictures/logo.svg);
+    background-size: contain;
+    z-index: 2;
+
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 20px;
+    left: 20px;
+}
 
 
 
@@ -131,17 +148,6 @@ footer {
 */
 
 
-#overskrift {
-    background-image: url(pictures/logo.svg);
-    background-size: contain;
-    z-index: 2;
-
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    top: 20px;
-    left: 20px;
-}
 
 
 /*----- om -------*/
@@ -241,6 +247,10 @@ footer {
     line-height: 10px;
 }
 
+.top .tema_overskrift {
+    margin-top: 100px;
+}
+
 .bag {
     background-image: url(pictures/bag.svg);
     background-size: contain;
@@ -266,7 +276,7 @@ footer {
 
 .smutvej a {
     /*    padding: 0px 6px;*/
-    color: white;
+    color: deeppink;
     font-size: 1rem;
     text-decoration: none;
 }
@@ -377,7 +387,7 @@ img {
 
 
 @media screen and (max-width: 390px) {
-    #overskrift {
+    #logo {
         width: 60px;
         height: 60px;
     }

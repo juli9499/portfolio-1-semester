@@ -11,16 +11,16 @@ function sidenVises() {
 
 function toggleMenu() {
     console.log("Toggle menu");
-    document.querySelector("#undermenu").classList.toggle("hidden");
+    document.querySelector(".undermenu").classList.toggle("hidden");
 
-    let erSkjult = document.querySelector("#undermenu").classList.contains("hidden");
+    let erSkjult = document.querySelector(".undermenu").classList.contains("hidden");
 
     if (erSkjult == true) {
         //menuen er nu skjult - ændre menuknap til lll
         document.querySelector("#menuknap").textContent = "☰";
     } else {
         //menuen er nu vist - ændre menuknap til X
-        document.querySelector("#menuknap").textContent = "X";
+        document.querySelector("#menuknap").textContent = "✕";
     }
 
 }
