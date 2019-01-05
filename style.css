@@ -6,9 +6,20 @@ html {
 
 body {
     font-family: 'Alegreya Sans', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: var(--color-1);
+    background-image: url(pictures/background2.jpg);
+    background-size: 100%;
+    /*    background-size: 100%;*/
+    /*    background-color: var(--color-1);*/
+
+    background-repeat: repeat;
+    background-attachment: fixed;
     margin: 0;
+}
+
+@media screen and (max-width: 630px) {
+    body {
+        background-size: 630px;
+    }
 }
 
 
@@ -23,118 +34,73 @@ body {
 
 /*Variables*/
 :root {
-    --color-1: #ffffff;
-    --color-2: #ebbeef;
-    --color-3: #efe2d2;
-    --color-4: #83a9c9;
-    --color-5: #aed3e6;
-}
-
-
-footer {
-    background-color: var(--color-2);
-}
-
-
-/*----------------------- BRUGER MENU -------------------------*/
-#burgermenu {
-    position: relative;
-    top: 2px;
-    right: 2px;
+    --color-1: #93416d;
+    --color-2: #d69fb2;
+    --color-3: #85c4eb;
+    --color-4: #6d957e;
+    --color-5: #efe2d2;
 
 }
 
-#menuknap {
-    position: absolute;
-    display: inline-block;
-    font-size: 40px;
-    background-color: aqua;
-    right: 2px;
+/*---------------------- BUTTON ---------------------*/
 
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    border: none;
+    right: 30px;
+    z-index: 2;
+    background-image: url(pictures/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: none;
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
 }
 
+#myBtn:hover {
+    background-image: url(pictures/arrow2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-size: 70px;
+    background-color: none;
+    transform: scale(1.1);
 
-.undermenu {
-    position: absolute;
-    right: 0;
+    width: 50px;
+    height: 50px;
+}
+
+/*--------------------------------------- FORSIDE---------------------------------------*/
+
+
+
+.content {
     text-align: right;
-    background-color: pink;
-
-
-    transition: transform 0.5s;
-    transform-origin: top left;
-    display: flex;
-    flex-direction: column;
-    margin-top: 70px;
+    margin-top: 40px;
     margin-right: 20px;
-
+    position:
 }
 
-
-.undermenu a {
+.content a {
     padding: 0px 6px;
     color: black;
     font-size: 1rem;
     text-decoration: none;
 }
 
-.undermenu a:hover {
-    text-decoration: underline;
+.content a:hover {
     color: white;
+    transition: .5s;
+    transform: scale(1.5);
 }
-
-
-
-@media screen and (min-width: 390px) {
-
-    #menuknap {
-        display: none;
-    }
-
-    .undermenu {
-        text-align: right;
-        margin-top: 40px;
-        margin-right: 20px;
-        display: flex;
-        flex-direction: row;
-        background-color: none;
-    }
-
-    .undermenu a {
-        padding: 0px 6px;
-        color: black;
-        font-size: 1rem;
-        text-decoration: none;
-    }
-
-    .undermenu a:hover {
-        text-decoration: underline;
-        color: white;
-    }
-
-}
-
-
-#logo {
-    background-image: url(pictures/logo.svg);
-    background-size: contain;
-    z-index: 2;
-
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    top: 20px;
-    left: 20px;
-}
-
-
-
-/*--------------------------------------- FORSIDE---------------------------------------*/
-
-
-
-
-
 
 
 /*
@@ -148,15 +114,19 @@ footer {
 */
 
 
+#overskrift {
+    background-image: url(pictures/logo.svg);
+    background-size: contain;
+    z-index: 2;
 
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 20px;
+    left: 20px;
+}
 
 /*----- om -------*/
-
-#om {
-    background-color: var(--color-2);
-    padding-top: 1px;
-    padding-bottom: 1px;
-}
 
 #om .sectionwrapper {
     background-color: white;
@@ -164,12 +134,14 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     margin: 50px;
+    margin-top: 150px;
 }
 
 
 #om .column {
     flex-grow: 1;
     flex-basis: 200px;
+    margin-right: 20px;
     padding: 20px;
     flex-direction: column;
     justify-content: space-between;
@@ -179,6 +151,8 @@ footer {
     background-image: url(pictures/profile.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
+
     height: 80px;
 }
 
@@ -186,7 +160,7 @@ footer {
     background-image: url(pictures/bulb.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 80px;
+    background-position: center;
     height: 80px;
 }
 
@@ -194,7 +168,7 @@ footer {
     background-image: url(pictures/book.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 80px;
+    background-position: center;
     height: 80px;
 }
 
@@ -220,35 +194,62 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     text-align: center;
-    z-index: 2;
 }
 
 .container:hover img {
-    opacity: 0.6;
+    opacity: 0.3;
+    transform: scale(1.05);
 }
+
+
 
 .container:hover .middle {
     opacity: 1;
 }
 
 .text {
-    /*    background-color: #4CAF50;*/
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
+    color: var(--color-2);
+    font-family: 'Alegreya Sans bold', sans-serif;
+    font-size: 25px;
 }
 
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+
+/*---------tema-------*/
+
+#sectionwrapper_portfolio h2 {
+    border-top: 2px black solid;
+    /*
+    background-color: #faabc1;
+    color: white;
+    border-radius: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+*/
+    /*
+    text-decoration: underline;
+    text-decoration-color: #ffc9d6;
+*/
+
+}
 
 .tema_overskrift {
     text-align: center;
     margin-top: 50px;
     line-height: 10px;
-}
-
-.top .tema_overskrift {
-    margin-top: 100px;
 }
 
 .bag {
@@ -276,14 +277,14 @@ footer {
 
 .smutvej a {
     /*    padding: 0px 6px;*/
-    color: deeppink;
+    color: white;
     font-size: 1rem;
     text-decoration: none;
 }
 
 .smutvej a:hover {
     /*    text-decoration: underline;*/
-    text-shadow: 3px 2px #d1c2b0;
+    text-shadow: 3px 2px var(--color-2);
 
 }
 
@@ -300,33 +301,27 @@ footer {
     padding-left: 10vw;
     padding-right: 10vw;
     padding-bottom: 30px;
+    padding-top: 30px;
 }
 
-#tema1 .sectionwrapper {
-    background-color: var(--color-2);
-}
-
-#tema2 .sectionwrapper {
-    background-color: var(--color-4);
-}
-
-#tema3 .sectionwrapper {
-    background-color: var(--color-5);
-}
 
 .column_left {
     flex-grow: 2;
-    flex-basis: 400px;
+    flex-basis: 600px;
     padding: 20px;
     flex-direction: column;
 }
 
 .column_right {
     flex-grow: 1;
-    flex-basis: 200px;
+    flex-basis: 300px;
     padding: 20px;
     flex-direction: column;
+    background-color: #fffcfc;
+    outline: 3px dotted #ffe8ec;
 }
+
+
 
 
 #sectionwrapper_portfolio a {
@@ -345,7 +340,7 @@ footer {
 img {
     max-width: 400px;
 
-    outline: black 3px solid;
+    outline: var(--color-2) 5px solid;
 }
 
 @media screen and (max-width: 520px) {
@@ -387,7 +382,7 @@ img {
 
 
 @media screen and (max-width: 390px) {
-    #logo {
+    #overskrift {
         width: 60px;
         height: 60px;
     }
