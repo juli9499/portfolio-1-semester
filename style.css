@@ -7,12 +7,10 @@ html {
 
 body {
     font-family: 'Alegreya Sans', sans-serif;
-    background-image: url(pictures/background2.jpg);
+    background-image: url(pictures/background22.jpg);
     background-size: 100%;
-    /*    background-size: 100%;*/
-    /*    background-color: var(--color-1);*/
-
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-color: #161e21;
     background-attachment: fixed;
     margin: 0;
 }
@@ -42,6 +40,7 @@ body {
     --color-5: #efe2d2;
 
 }
+
 
 /*---------------------- BUTTON ---------------------*/
 
@@ -90,7 +89,6 @@ body {
     text-align: right;
     margin-top: 40px;
     margin-right: 20px;
-    position:
 }
 
 .content a {
@@ -238,7 +236,7 @@ body {
 /*---------tema-------*/
 
 #sectionwrapper_portfolio h2 {
-    border-top: 2px black solid;
+    border-bottom: 2px black solid;
     /*
     background-color: #faabc1;
     color: white;
@@ -253,6 +251,10 @@ body {
 
 }
 
+#sectionwrapper_portfolio h1 {
+    color: white;
+}
+
 .tema_overskrift {
     text-align: center;
     margin-top: 50px;
@@ -260,11 +262,11 @@ body {
 }
 
 .bag {
-    background-image: url(pictures/bag.svg);
+    background-image: url(pictures/bag2.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100px;
+    height: 70px;
 }
 
 
@@ -278,14 +280,23 @@ body {
 
 /*--------------- nav -----------------*/
 .smutvej {
-    text-align: center;
     margin-top: 40px;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), white, white, white, white, white, rgba(0, 0, 0, 0));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
+
 .smutvej a {
-    color: white;
+    color: black;
     font-size: 1rem;
     text-decoration: none;
+    padding: 20px;
 }
 
 .smutvej a:hover {
@@ -327,6 +338,20 @@ body {
     flex-direction: column;
     background-color: #fffcfc;
     outline: 3px dotted #ffe8ec;
+}
+
+.column_1 {
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.column_2 {
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 20px;
+    flex-direction: column;
 }
 
 
@@ -385,12 +410,17 @@ img {
     a {
         font-size: 4vw;
     }
+
+
 }
+
 
 @media screen and (max-width: 370px) {
     img {
         max-width: 200px;
     }
+
+
 }
 
 
@@ -401,4 +431,17 @@ img {
         width: 60px;
         height: 60px;
     }
+
+    .content {
+        text-align: right;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+
+    .content a {
+        padding: 0px 10px;
+        font-size: 0.9rem;
+    }
+
+
 }

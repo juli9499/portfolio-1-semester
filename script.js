@@ -10,12 +10,13 @@ function sidenVises() {
 
 
 
-// When the user scrolls down 20px from the top of the document, show the button
+// Når du ruller 20px fra the toppen af dokumentet, vis button
 window.onscroll = function () {
     scrollFunction()
 }
 
 function scrollFunction() {
+    console.log("scroll function");
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("myBtn").style.display = "block";
     } else {
@@ -23,8 +24,14 @@ function scrollFunction() {
     }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// Når du klikker på button, rul til toppen af siden
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+
+//function addBar {
+//    console.log("add bar");
+//    if (document.querySelector(".smutvej")==class )
+//}
