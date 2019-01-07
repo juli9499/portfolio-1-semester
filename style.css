@@ -2,7 +2,7 @@
 
 html {
     font-size: 20px;
-    scroll-behavior: smooth;
+    /*    scroll-behavior: smooth;*/
 }
 
 body {
@@ -35,7 +35,7 @@ body {
 :root {
     --color-1: #93416d;
     --color-2: #d69fb2;
-    --color-3: #85c4eb;
+    --color-3: #b57d91;
     --color-4: #6d957e;
     --color-5: #efe2d2;
 
@@ -83,6 +83,10 @@ body {
 
 /*--------------------------------------- FORSIDE---------------------------------------*/
 
+#start h3,
+h4 {
+    color: white;
+}
 
 
 .content {
@@ -231,6 +235,10 @@ body {
 }
 
 
+.center_text {
+    padding-left: 60px;
+    font-size: 15px;
+}
 
 
 /*---------tema-------*/
@@ -253,12 +261,18 @@ body {
 
 #sectionwrapper_portfolio h1 {
     color: white;
+    padding-top: 40px;
 }
 
 .tema_overskrift {
     text-align: center;
     margin-top: 50px;
     line-height: 10px;
+}
+
+.overskrift {
+
+    margin-top: 100px;
 }
 
 .bag {
@@ -284,10 +298,14 @@ body {
     position: sticky;
     top: 0px;
     z-index: 2;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), white, white, white, white, white, rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #fff5f5, #fff5f5, #fff5f5, #fff5f5, #fff5f5, rgba(0, 0, 0, 0));
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /*
+    padding-top: 3px;
+    padding-bottom: 3px;
+*/
 
 }
 
@@ -301,7 +319,8 @@ body {
 
 .smutvej a:hover {
     /*    text-decoration: underline;*/
-    text-shadow: 3px 2px var(--color-2);
+    text-shadow: 1px 1px var(--color-3);
+    color: white;
 
 }
 
@@ -329,6 +348,8 @@ body {
     flex-basis: 600px;
     padding: 20px;
     flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .column_right {
@@ -338,6 +359,23 @@ body {
     flex-direction: column;
     background-color: #fffcfc;
     outline: 3px dotted #ffe8ec;
+}
+
+.column_left1 {
+    flex-grow: 1;
+    max-width: 150px;
+    flex-basis: 50px;
+    padding: 20px;
+}
+
+.column_right2 {
+    flex-grow: 1;
+    max flex-basis: 50px;
+    padding: 20px;
+}
+
+.column_right2 img {
+    max-width: 150px;
 }
 
 .column_1 {
