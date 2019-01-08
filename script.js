@@ -1,10 +1,12 @@
 window.addEventListener("load", sidenVises);
-
+let timeOut;
 
 
 function sidenVises() {
     console.log("siden vises");
+    document.querySelector("#logo").classList.add("animation_logo");
     //registerer klik på menu-knap
+
 
 }
 

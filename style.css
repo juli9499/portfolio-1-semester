@@ -2,7 +2,7 @@
 
 html {
     font-size: 20px;
-    /*    scroll-behavior: smooth;*/
+    scroll-behavior: smooth;
 }
 
 body {
@@ -28,6 +28,10 @@ body {
     transform: scale(0);
 }
 
+.hide {
+    display: none;
+}
+
 
 
 
@@ -40,6 +44,39 @@ body {
     --color-5: #efe2d2;
 
 }
+
+
+.animation_logo {
+    animation-name: animation_logo;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(41);
+    animation-delay: 0.5s;
+
+}
+
+@keyframes animation_logo {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -4100% 0;
+    }
+}
+
+
+#logo {
+    background-size: 4100% 100%;
+    background-image: url(pictures/sprite_logo.svg);
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 20px;
+    left: 20px;
+
+}
+
 
 
 /*---------------------- BUTTON ---------------------*/
@@ -110,16 +147,6 @@ h4 {
     transform: scale(1.5);
 }
 
-
-/*
-#overskrift {
-    text-align: center;
-    position: absolute;
-    top: 0px;
-    left: 40px;
-
-}
-*/
 
 
 #overskrift {
@@ -245,10 +272,7 @@ h4 {
 }
 
 
-.center_text {
-    padding-left: 60px;
-    font-size: 15px;
-}
+
 
 
 p img {
@@ -391,6 +415,10 @@ p img {
     outline: 3px dotted #ffe8ec;
 }
 
+.center_text {
+    padding-left: 60px;
+    font-size: 15px;
+}
 
 
 .column_1 {
@@ -496,6 +524,26 @@ img {
     .content a {
         padding: 0px 10px;
         font-size: 0.9rem;
+    }
+
+    #om .sectionwrapper {
+        margin: 10px;
+        margin-top: 50px;
+    }
+
+    .sectionwrapper {
+        margin-top: 10px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .center_text {
+        padding-left: 20px;
+        font-size: 15px;
     }
 
 
