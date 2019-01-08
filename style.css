@@ -366,7 +366,6 @@ h4 {
 
 
 
-
 p img {
     width: 30px;
     padding-right: 5px;
@@ -510,7 +509,7 @@ p img {
 
 .column_left2 {
     flex-grow: 1;
-    flex-basis: 200px;
+    flex-basis: 250px;
     justify-content: space-between;
     position: relative;
 
@@ -518,7 +517,7 @@ p img {
 
 .column_right2 {
     flex-grow: 1;
-    flex-basis: 200px;
+    flex-basis: 250px;
     font-size: 15px;
     justify-content: space-between;
 }
@@ -556,7 +555,12 @@ p img {
     color: green;
 }
 */
+.picture img {
+    height: 300px;
+    margin: 20px;
 
+
+}
 
 img {
     max-width: 400px;
