@@ -502,7 +502,10 @@ p img {
     /*    flex-direction: row;*/
 }
 
-#tema3 .column_left {
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 
 }
@@ -519,8 +522,8 @@ p img {
 .column_left2 {
     flex-grow: 1;
     flex-basis: 250px;
+    max-height: 170px;
     justify-content: space-between;
-    position: relative;
 
 }
 
@@ -528,6 +531,8 @@ p img {
     flex-grow: 1;
     flex-basis: 250px;
     font-size: 15px;
+
+    max-height: 170px;
     justify-content: space-between;
 }
 
@@ -611,6 +616,16 @@ img {
     a {
         font-size: 4vw;
     }
+
+    .column_left2 {
+        max-height: none;
+
+    }
+
+    .column_right2 {
+        max-height: none;
+    }
+
 
 
 }
