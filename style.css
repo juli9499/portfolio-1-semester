@@ -65,6 +65,25 @@ body {
     }
 }
 
+.animation_logo2 {
+    animation-name: animation_logo;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(41);
+    animation-delay: 0.5s;
+
+}
+
+@keyframes animation_logo2 {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -4100% 0;
+    }
+}
+
 
 #logo {
     background-size: 4100% 100%;
@@ -104,7 +123,7 @@ body {
 
 #loading_screen {
     background: #000;
-    opacity: 0.5;
+    opacity: 0.8;
     position: fixed;
     z-index: 2;
     top: 0;
@@ -116,12 +135,40 @@ body {
     background-size: 4100% 100%;
     background-image: url(pictures/logo_sprite_white.svg);
     position: absolute;
-    background-position: right;
     width: 200px;
     height: 200px;
 
-
 }
+
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 250px;
+}
+
+
+.fade_out {
+    animation-name: fadeout_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes fadeout_kf {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 
 
 /*---------------------- BUTTON ---------------------*/
@@ -449,6 +496,7 @@ p img {
     flex-direction: column;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .column_right {
@@ -460,12 +508,23 @@ p img {
     outline: 3px dotted #ffe8ec;
 }
 
-.center_text {
-    padding-left: 60px;
+.column_left2 {
+    flex-grow: 1;
+    flex-basis: 200px;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.column_right2 {
+    flex-grow: 1;
+    flex-basis: 200px;
     font-size: 15px;
+    justify-content: space-between;
 }
 
 
+/*
 .column_1 {
     flex-grow: 1;
     flex-basis: 400px;
@@ -479,6 +538,7 @@ p img {
     padding: 20px;
     flex-direction: column;
 }
+*/
 
 
 
@@ -591,5 +651,83 @@ img {
         font-size: 15px;
     }
 
+    .column_left2 {
+        flex-grow: 1;
+        flex-basis: 500px;
+        justify-content: space-between;
+        position: relative;
 
+    }
+
+    .column_right2 {
+        flex-grow: 1;
+        flex-basis: 200px;
+        font-size: 15px;
+        justify-content: space-between;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/*-------------------- CHEESEPLEASE ---------------------------*/
+
+
+
+@keyframes up_down_kf {
+
+    0%,
+    100% {
+        transform: translateY(17vw);
+    }
+
+    50% {
+        transform: translateY(0vw);
+    }
+}
+
+
+.type1 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-image: url("pictures/cheeseplease/cat.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    animation-name: up_down_kf;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    top: 10px;
+    left: 10px;
+
+}
+
+
+#box1 {
+    width: 250px;
+    height: 130px;
+    overflow: hidden;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+}
+
+
+#tube1 {
+    background-image: url("pictures/cheeseplease/tube.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 200px;
+    left: 20px;
 }

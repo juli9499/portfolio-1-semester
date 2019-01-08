@@ -5,7 +5,9 @@ var myVar;
 
 function myFunction() {
     myVar = setTimeout(sidenVises, 4000);
-     document.querySelector("#loading").classList.add("animation_logo");
+     document.querySelector("#loading").classList.add("animation_logo2");
+    document.querySelector("#loading_screen").classList.add("fade_out");
+
 }
 
 
@@ -13,12 +15,13 @@ function myFunction() {
 function sidenVises() {
     console.log("siden vises");
 
+
     document.getElementById("loading").style.display = "none";
     document.getElementById("loading_screen").style.display = "none"; document.querySelector("#logo").classList.add("animation_logo");
 
 
-
 }
+
 
 
 
