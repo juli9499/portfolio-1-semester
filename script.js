@@ -1,14 +1,25 @@
-window.addEventListener("load", sidenVises);
-let timeOut;
+window.addEventListener("load", myFunction);
+
+
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(sidenVises, 4000);
+     document.querySelector("#loading").classList.add("animation_logo");
+}
+
 
 
 function sidenVises() {
     console.log("siden vises");
-    document.querySelector("#logo").classList.add("animation_logo");
-    //registerer klik på menu-knap
+
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("loading_screen").style.display = "none"; document.querySelector("#logo").classList.add("animation_logo");
+
 
 
 }
+
 
 
 
@@ -31,9 +42,3 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
-
-//function addBar {
-//    console.log("add bar");
-//    if (document.querySelector(".smutvej")==class )
-//}

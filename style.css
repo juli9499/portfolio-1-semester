@@ -77,6 +77,51 @@ body {
 
 }
 
+/*
+
+.logo2 {
+    background-size: 4100% 100%;
+    background-image: url(pictures/sprite_logo.svg);
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 100px;
+    left: 100px;
+
+}
+*/
+
+/*
+#loading_screen {
+    background-color: rgba(0, 0, 0, 0.35);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    margin-top: -40px;
+}
+*/
+
+#loading_screen {
+    background: #000;
+    opacity: 0.5;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 1600px;
+}
+
+#loading {
+    background-size: 4100% 100%;
+    background-image: url(pictures/logo_sprite_white.svg);
+    position: absolute;
+    background-position: right;
+    width: 200px;
+    height: 200px;
+
+
+}
 
 
 /*---------------------- BUTTON ---------------------*/
