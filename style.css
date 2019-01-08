@@ -251,6 +251,13 @@ h4 {
 }
 
 
+p img {
+    width: 30px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+
 /*---------tema-------*/
 
 #sectionwrapper_portfolio h2 {
@@ -302,6 +309,17 @@ h4 {
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
+}
+
+
+#tema2 a {
+    color: #dd6890;
+    text-decoration: none;
+}
+
+#tema2 a:hover {
+    color: #ffa1c1;
+    text-decoration: none;
 }
 
 /*--------------- nav -----------------*/
