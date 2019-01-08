@@ -378,16 +378,20 @@ p img {
 #sectionwrapper_portfolio h2 {
     border-bottom: 2px black solid;
     /*
+
     background-color: #faabc1;
     color: white;
     border-radius: 50px;
     padding-left: 15px;
     padding-right: 15px;
 */
+
+
     /*
     text-decoration: underline;
-    text-decoration-color: #ffc9d6;
+    text-decoration-color: #000000;
 */
+
 
 }
 
@@ -495,7 +499,12 @@ p img {
     flex-direction: column;
     display: flex;
     flex-wrap: wrap;
+    /*    flex-direction: row;*/
+}
+
+#tema3 .column_left {
     flex-direction: row;
+
 }
 
 .column_right {
