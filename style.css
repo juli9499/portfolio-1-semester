@@ -82,11 +82,13 @@ body {
 }
 
 /*--------------------------------------- FORSIDE---------------------------------------*/
+/*
 
 #start h3,
 h4 {
     color: white;
 }
+*/
 
 
 .content {
@@ -215,6 +217,9 @@ h4 {
 
 .container:hover .middle {
     opacity: 1;
+    background-color: white;
+    border-radius: 50px;
+    padding: 15px;
 }
 
 .text {
@@ -231,6 +236,11 @@ h4 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    align-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: auto;
+    min-width: 200px;
     text-align: center;
 }
 
@@ -269,6 +279,8 @@ h4 {
     margin-top: 50px;
     line-height: 10px;
 }
+
+
 
 .overskrift {
 
@@ -361,22 +373,7 @@ h4 {
     outline: 3px dotted #ffe8ec;
 }
 
-.column_left1 {
-    flex-grow: 1;
-    max-width: 150px;
-    flex-basis: 50px;
-    padding: 20px;
-}
 
-.column_right2 {
-    flex-grow: 1;
-    max flex-basis: 50px;
-    padding: 20px;
-}
-
-.column_right2 img {
-    max-width: 150px;
-}
 
 .column_1 {
     flex-grow: 1;
@@ -394,6 +391,7 @@ h4 {
 
 
 
+/*
 
 #sectionwrapper_portfolio a {
     padding: 0px 6px;
@@ -406,6 +404,7 @@ h4 {
     text-decoration: underline;
     color: green;
 }
+*/
 
 
 img {
